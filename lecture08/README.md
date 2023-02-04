@@ -56,9 +56,9 @@ Three volunteers to role-play and demonstrate a pipeline.
 
         $ echo "Daniellee" | grep -E '^D'           # Match start
 
-        $ echo "Daniellee" | grep -E 'e$'             # Match end
+        $ echo "Daniellee" | grep -E 'e$'           # Match end
 
-        $ echo "Nicolei" | grep -E '(i).*\1'        # Match with group references
+        $ echo "Daniellee" | grep -E '(e).*\1'      # Match with group references
 
 # Regular Expressions: Examples
 
