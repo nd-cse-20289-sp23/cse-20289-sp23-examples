@@ -9,11 +9,11 @@ Person = collections.namedtuple('Person', 'first_name last_name')
 # Variables
 
 People = [
-    Person('Peter'    , 'Bui'),
-    Person('Zephan'   , 'Enciso'),
-    Person('Christina', 'Youn'),
-    Person('Emory'    , 'Smith'),
-    Person('Caleb'    , 'Bui'),
+    Person('Peter', 'Bui'),
+    Person('Matt' , 'Carbonaro'),
+    Person('Josh' , 'Chun'),
+    Person('Anna' , 'Klempay'),
+    Person('Caleb', 'Bui'),
 ]
 
 # Default sort                                  # Discuss: default (first_name)
