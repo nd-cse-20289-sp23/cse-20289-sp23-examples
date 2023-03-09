@@ -12,19 +12,19 @@ PORT = 9999
 
 class FormHandler(tornado.web.RequestHandler):
     def get(self):
-        # Get value for name argument from form submission
-        name = self.get_argument('name', '')
+        # Get value for user argument from form submission
+        user = self.get_argument('user', '')
 
-        # Display greeting if Name is specified
-        if name:
-            self.write(f'<b>Hello, {name}</b>')
+        # Display greeting if user is specified
+        if user:
+            self.write(f'<b>Hello, {user}</b>')
 
         # To get input from the user, we must create a form where each input
         # element has a name we can use to retrieve data.
         self.write(f'''
 <h1>Enter Your Name:</h1>
 <form>
-    <input type="text" name="name" value="{name}">
+    <input type="text" name="user" value="{user}">
     <input type="submit" value="Echo!">
 </form>
 ''')
