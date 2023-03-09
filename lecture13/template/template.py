@@ -12,8 +12,8 @@ PORT = 9999
 
 class TemplateHandler(tornado.web.RequestHandler):
     def get(self):
-        name = self.get_argument('name', '')
-        self.render('template.html', name=name)     # Render template with arguments
+        user = self.get_argument('user', '')
+        self.render('template.html', user=user)     # Render template with arguments
 
 # Main Execution
 
